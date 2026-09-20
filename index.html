@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>??</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Layar 1: Amplop -->
+  <div id="envelope-container" onclick="openEnvelope()">
+    <img src="envelope.jpg" alt="Envelope" id="envelope-img">
+    <p>🐱letter for you🐱</p>
+  </div>
+
+  <!-- Layar 2: Surat/Pertanyaan -->
+  <div id="letter-container" class="hidden">
+    <div class="letter-window">
+      <h1 id="question">rate 1-10</h1>
+      <img id="cat-img" src="cat_heart.png" alt="Cat">
+      
+      <div id="buttons-wrapper">
+        <button id="yes-btn" onclick="sayYes()"><img src="yes.png" alt="Yes"></button>
+        <button id="no-btn" onclick="moveNoButton()" ontouchstart="moveNoButton()"><img src="no.png" alt="No"></button>
+      </div>
+
+      <p id="final-message" class="hidden">??!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
